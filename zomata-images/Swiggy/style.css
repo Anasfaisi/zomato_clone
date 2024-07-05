@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  margin: 0px;
+}
+body {
+  height: 2000px;
+}
+.nav {
+  display: flex;
+  padding: 0px 180px;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: 4px 0px 10px #a5a5a580;
+}
+.nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+}
+.nav .logo img {
+  width: 50px;
+}
+.nav .logo .other {
+  display: flex;
+  gap: 20px;
+}
+.nav .tags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.nav .tags .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Main Section */
+
+.main-container {
+  margin: 0px 210px;
+}
+.main-container > p {
+  font-size: 25px;
+  font-weight: 700;
+}
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.filter-buttons .item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  border: 1px solid rgb(194, 194, 194);
+  box-shadow: 1px 0px 4px rgba(186, 184, 184, 0.407);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.restaurants {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 40px;
+}
+.restaurants .card {
+  width: 300px;
+  border: none;
+  margin-bottom: 20px;
+}
+.card .image {
+  position: relative;
+  width: 270px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 1px 1px 4px rgba(138, 138, 138, 0.483);
+}
+.image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+.image img {
+  position: relative;
+  width: 100%;
+  top: -70px;
+}
+.card .content {
+  padding: 10px;
+}
+.content p:first-child {
+  font-size: 18px;
+  font-weight: 700;
+}
+.rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 600;
+}
+
+hr {
+  margin: 50px 0px;
+  color: rgb(164, 164, 164);
+}
+
+/* Best Place Section */
+
+.best-place,
+.best-cuisines,
+.explore {
+  margin: 0px 120px;
+}
+.best-cuisines,
+.explore {
+  margin-top: 80px;
+}
+.best-place > p,
+.best-cuisines > p,
+.explore > p {
+  font-size: 24px;
+  font-weight: 700;
+}
+.places {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 15px;
+  column-gap: 30px;
+  margin-top: 20px;
+}
+.places .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  padding: 15px 20px;
+  border: 1px solid rgba(165, 165, 165, 0.654);
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px rgba(212, 212, 212, 0.6);
+}
+.explore .places {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Footer */
+footer {
+  margin-top: 150px;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0px;
+  align-items: center;
+  background: #f0f0f5;
+}
+.app .text {
+  font-size: 24px;
+  font-weight: 800;
+  margin-right: 100px;
+  color: rgb(68, 68, 68);
+}
+.app img {
+  width: 200px;
+}
+
+.footer-content {
+  background-color: black;
+  color: white;
+  padding: 50px 210px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.first-col {
+  display: flex;
+  flex-direction: column;
+}
+.first-col .logo {
+  display: flex;
+  align-items: center;
+}
+.first-col .logo img {
+  width: 50px;
+}
+.first-col .logo p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.first-col > p {
+  color: rgb(178, 178, 178);
+}
+
+.footer-content .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-content .links p {
+  color: #bababa;
+}
